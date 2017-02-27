@@ -24,7 +24,7 @@ namespace RealMocking.Tests.Controllers
 
             // Make assertions that our call happened!
             emailsMock.Received().SendEmail(testMessage);
-            emailsMock.Received(1).SendEmail(testMessage); // 1 is implied, but specificity helps sometimes
+            emailsMock.Received(1).SendEmail("Hello, world!"); // 1 is implied, but specificity helps sometimes
             emailsMock.DidNotReceive().SendEmail("this didn't happen");
 
             // Now let's validate our parameters more
