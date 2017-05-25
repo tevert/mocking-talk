@@ -1,0 +1,12 @@
+﻿{
+  "References": [
+    {
+      "Path": "../RealMocking/Scripts/Mine" 
+    } 
+  ],
+  "Tests": [
+    {
+      "Path": "Scripts" 
+    } 
+  ]
+}

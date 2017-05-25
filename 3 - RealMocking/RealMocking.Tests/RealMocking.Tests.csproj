@@ -108,8 +108,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
+    <Content Include="Scripts\main.js" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="chutzpah.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +120,7 @@
       <Name>RealMocking</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
