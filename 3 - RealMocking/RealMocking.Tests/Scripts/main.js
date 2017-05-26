@@ -1,4 +1,4 @@
-﻿describe('DoTheThing in Spanish', function () {
+﻿describe('getUserGreetingMessage in Spanish', function () {
     beforeEach(function () {
         spyOn(window, 'getCurrentLocale').and.returnValue('es');
     });
@@ -52,5 +52,25 @@
         it('calls the locale service', function () {
             expect(window.getCurrentLocale.calls.count()).toBe(1);
         });
+    });
+});
+
+describe('initPage', function () {
+    beforeEach(function () {
+        spyOn(window.$.fn, 'show');
+        spyOn(window, '$').and.callThrough();
+    });
+
+    beforeEach(function () {
+        initPage();
+    });
+
+    it('looks for the popup and only the popup', function () {
+        expect(window.$.calls.count()).toBe(1);
+        expect(window.$).toHaveBeenCalledWith('#popup');
+    });
+
+    it('calls "show"', function () {
+        expect(window.$.fn.show.calls.count()).toBe(1);
     });
 });

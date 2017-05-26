@@ -1,12 +1,12 @@
 ﻿{
   "References": [
+    { "Path": "../RealMocking/Scripts/Mine" },
     {
-      "Path": "../RealMocking/Scripts/Mine" 
-    } 
+      "Path": "../RealMocking/Scripts",
+      "Includes": [ "*/jquery-1.10.2.js" ]
+    }
   ],
   "Tests": [
-    {
-      "Path": "Scripts" 
-    } 
+    { "Path": "Scripts" } 
   ]
 }
